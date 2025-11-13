@@ -1,6 +1,6 @@
 # ENG220-Group13-Aggravated-Assault-
 # Team Memebers 
- - Warner Eames
+ - Warner Eames (PM)
  - Lamar Elliott
  - Emma Smiset-Ortiz
  - Cyprian Albano
