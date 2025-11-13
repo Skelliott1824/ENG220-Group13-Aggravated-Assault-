@@ -1,2 +1,7 @@
 # ENG220-Group13-Aggravated-Assault-
-GitHub Workflow 
+Team Memebers 
+Warner Eames 
+Lamar Elliott 
+Emma Ortiz 
+Cyprian Albano  
+Nicholas Starr
