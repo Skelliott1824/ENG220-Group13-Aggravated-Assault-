@@ -1,0 +1,30 @@
+% Data
+victim_labels = {'Relationship Unknown','Stranger','Acquaintance','Boyfriend/Girlfriend','Otherwise Known','Spouse','Child','Offender','Other Family Member','Parent','Friend','Sibling','Neighbor','Ex-Relationship','Ex-Spouse','Common-Law Spouse','In-law','Stepchild','Child of Boyfriend or Girlfriend','Stepparent','Grandparent','Grandchild','Employee','Homosexual Relationship','Employer','Babysittee','Stepsibling','Cohabitant','Foster Child','Foster Parent'};
+victim_counts = [1362601,992889,744947,722262,517922,235791,180525,142041,140496,133268,127337,125890,117318,114346,45847,27420,24965,22689,19682,18555,13344,9262,8761,7189,4627,3697,3490,710,19,17];
+
+weapon_labels = {'Personal Weapons','Handgun','Knife/Cutting Instrument','Firearm','Blunt Object','Other','Motor Vehicle/Vessel','Asphyxiation','None','Unknown','Rifle','Other Firearm','Shotgun','Handgun (Automatic)','Firearm (Automatic)','Fire/Incendiary Device','Drugs/Narcotics/Sleeping Pills','Poison','Rifle (Automatic)','Explosives','Other Firearm (Automatic)','Shotgun (Automatic)','Club/Blackjack/Brass Knuckles','Lethal Cutting Instrument','Drowning','Pushed or Thrown Out Window','Strangulation - Include Hanging','Unarmed'};
+weapon_counts = [1073169,1054702,870805,626843,543908,494755,301450,133729,126954,110675,86643,51126,43624,38556,16192,13710,8792,6175,5241,3307,1321,585,2,1,0,0,0,0];
+
+location_labels = {'Residence/Home','Highway/Road/Alley/Street/Sidewalk','Parking/Drop Lot/Garage','Other/Unknown','Hotel/Motel/Etc.','Bar/Nightclub','Convenience Store','Restaurant','Park/Playground','School-Elementary/Secondary','Jail/Prison/Penitentiary/Corrections Facility','Service/Gas Station','Drug Store/Doctor''s Office/Hospital','Commercial/Office Building','Field/Woods','Department/Discount Store','Grocery/Supermarket','Specialty Store','Government/Public Building','Air/Bus/Train Terminal','School/College','Shelter-Mission/Homeless','School-College/University','Shopping Mall','Church/Synagogue/Temple/Mosque','Liquor Store','Camp/Campground','Construction Site','Lake/Waterway/Beach','Rental Storage Facility','Community Center','Gambling Facility/Casino/Race Track','Tribal Lands','Industrial Site','Arena/Stadium/Fairgrounds/Coliseum','Bank/Savings and Loan','Daycare Facility','Auto Dealership New/Used','Abandoned/Condemned Structure','Rest Area','Amusement Park','Dock/Wharf/Freight/Modal Terminal','Farm Facility','ATM Separate from Bank','Military Installation','Cyberspace','Not Specified'};
+location_counts = [2896668,1132859,304524,150187,83456,80796,63777,59464,55637,52802,52673,51444,40333,35525,30448,24162,23111,20453,20290,17013,10046,8800,8543,7147,6805,6743,6151,5314,4995,4718,3405,3319,3242,3020,2903,2849,2588,2418,1949,1919,1513,1328,1068,368,251,0,0];
+
+% Plot Victim Relationship
+figure;
+bar(victim_counts)
+set(gca,'XTickLabel',victim_labels,'XTickLabelRotation',90)
+ylabel('Number of Incidents')
+title('Victim Relationship to Offender')
+
+% Plot Weapon Used
+figure;
+bar(weapon_counts)
+set(gca,'XTickLabel',weapon_labels,'XTickLabelRotation',90)
+ylabel('Number of Incidents')
+title('Weapon Used for Assault')
+
+% Plot Location Type
+figure;
+bar(location_counts)
+set(gca,'XTickLabel',location_labels,'XTickLabelRotation',90)
+ylabel('Number of Incidents')
+title('Location Type of Incidents')
